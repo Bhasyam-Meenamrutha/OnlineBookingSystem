@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "OnlineBookingSystem_backend": {
+      "main": "src/OnlineBookingSystem_backend/main.mo",
+      "type": "motoko"
+    },
+    "OnlineBookingSystem_frontend": {
+      "dependencies": [
+        "OnlineBookingSystem_backend"
+      ],
+      "source": [
+        "src/OnlineBookingSystem_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "OnlineBookingSystem_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
